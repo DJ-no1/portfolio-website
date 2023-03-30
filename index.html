@@ -7,6 +7,12 @@
     <title>Portfolio Website | Kingcode</title>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- iconscout cdn  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
@@ -14,9 +20,56 @@
     <header>
         <div class="container">
             <div class="header_content">
-                <img class="logo" src="" alt="">
+                <img class="logo" src="./assets/image/logo.png" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
         </div>
     </header>
+
+    <section class="home">
+        <div class="animation-home" id="particles-js"></div>
+        <div class="container">
+            <div class="content_home">
+                <div class="left-details">
+                    <h4>Hello there, I'm</h4>
+                    <h2>John Smith</h2>
+                    <h1>A <span id="typed">Web Developer</span></h1>
+                    <p>I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
+                    <button>About Me</button>
+                </div>
+                <div class="right-details">
+                    <img src="./assets/image/home.png" alt="">
+                    <div class="img-tools">
+                        <img src="./assets/image/github.png" alt="">
+                        <img src="./assets/image/vscode.png" alt="">
+                        <img src="./assets/image/photoshop.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-home">
+                <div class="mouse">
+                    <i class="uil uil-mouse-alt"></i>
+                    <span>Scroll down</span>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
