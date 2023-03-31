@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--title-color);
@@ -42,11 +46,24 @@ section {
     margin: auto;
 }
 
+.btn {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    padding: 15px 38px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
 /* ============ header ============ */
 
 header {
     position: fixed;
     width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
+    z-index: 1000;
 }
 
 .header_content {
@@ -138,16 +155,6 @@ header {
     margin: 20px 0 30px;
 }
 
-.content_home .left-details button {
-    background-color: var(--main-color);
-    border-radius: 50px;
-    color: #fff;
-    border: none;
-    padding: 15px 38px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
 .content_home .right-detailsi .img-tools {
     position: absolute;
 }
@@ -234,4 +241,83 @@ header {
 .footer-home .mouse span {
     font-size: 12px;
     font-weight: 500;
+    color: var(--description-color);
+}
+
+/* ============ about ============ */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content .left-details {
+    position: relative;
+}
+
+.about-content .left-details img {
+    width: 500px;
+    height: auto;
+}
+
+.about-content .left-details .project,
+.about-content .left-details .years {
+    position: absolute;
+    width: 170px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    padding: 0 20px;
+    font-weight: 500;
+    color: var(--description-color);
+
+}
+
+.about-content .left-details .years {
+    top: 140px;
+    left: -20px;
+}
+
+.about-content .left-details .project span,
+.about-content .left-details .years span {
+    font-weight: 700;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.about-content .left-details .years span {
+    color: #0EC6DF;
+}
+
+.about-content .left-details .project {
+    bottom: 80px;
+    right: 0;
+}
+
+.about-content .left-details .project span {
+    color: #F98600;
+}
+
+.about-content .right-details {
+    width: 550px;
+}
+
+.about-content .right-details h4 {
+    color: var(--main-color);
+}
+
+.about-content .right-details h3 {
+    font-size: 28px;
+    margin: 20px 0 30px 0;
+}
+
+.about-content .right-details p {
+    margin-bottom: 20px;
+    color: var(--description-color);
+    font-size: 15px;
+    line-height: 25px;
 }

@@ -22,8 +22,8 @@
             <div class="header_content">
                 <img class="logo" src="./assets/image/logo.png" alt="">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Resume</a></li>
                     <li><a href="#">Services</a></li>
@@ -33,7 +33,7 @@
         </div>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
         <div class="animation-home" id="particles-js"></div>
         <div class="container">
             <div class="content_home">
@@ -41,8 +41,8 @@
                     <h4>Hello there, I'm</h4>
                     <h2>John Smith</h2>
                     <h1>A <span id="typed">Web Developer</span></h1>
-                    <p>I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
-                    <button>About Me</button>
+                    <p>I'm creative designer based in New York, and I'm <br> very passionate and dedicated to my work.</p>
+                    <button class="btn">About Me</button>
                 </div>
                 <div class="right-details">
                     <img src="./assets/image/home.png" alt="">
@@ -54,15 +54,38 @@
                 </div>
             </div>
             <div class="footer-home">
-                <div class="mouse">
+                <a href="#about" class="mouse">
                     <i class="uil uil-mouse-alt"></i>
                     <span>Scroll down</span>
-                </div>
+                </a>
                 <div class="social-icon">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="left-details">
+                    <img src="./assets/image/about.jpg" alt="">
+                    <div class="years"><span id="year">20</span>Years of Success</div>
+                    <div class="project"><span id="project">9K</span>Total Project</div>
+                </div>
+                <div class="right-details">
+                    <h4>I'm a Web Developer</h4>
+                    <h3>I Can Develop Page Website</h3>
+                    <p>Hello there! I'm a web designer, and I'm very passionate and
+                    dedicated to my work. With 20 years experience as a
+                    professional web developer, I have acquired the skills and
+                    knowledge necessary to make your project a success. I enjoy
+                    every step of the design process, from discussion and
+                    collaboration.</p>
+                    <button class="btn">Hire Me</button>
                 </div>
             </div>
         </div>
