@@ -42,3 +42,25 @@ const load = () => {
 };
 
 addEventListener('scroll', load());
+
+
+/* ======== MIXITUP FILTER PORTFOLIO ========== */
+let mixerPortfolio = mixitup(".portfolio-container", {
+  selectors: {
+    target: ".portfolio-item",
+  },
+  animation: {
+    duration: 300,
+  },
+});
+
+
+/* ============= filter Active =============== */
+let tabfilter = document.querySelectorAll(".filter-portfolio button");
+
+function activefilter() {
+  tabfilter.forEach((l) => l.classList.remove("active-portfolio"));
+  this.classList.add('active-portfolio');
+}
+
+tabfilter.forEach(l => l.addEventListener('click', activefilter));
